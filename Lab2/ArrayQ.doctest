@@ -1,0 +1,24 @@
+>>> from linkedQFile import *
+>>> a=LinkedQ()
+
+>>> a.enqueue(1)
+
+>>> a.dequeue()
+1
+
+>>> a.enqueue(2)
+>>> a.enqueue(3)
+>>> a.enqueue(12)
+
+>>> a.gFirst().value
+12
+
+>>> a.gLast().value
+3
+
+>>> a.dequeue()
+2
+>>> a.dequeue()
+3
+>>> a.dequeue()
+12
